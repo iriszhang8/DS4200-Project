@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Costco Visualizations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Visualizing Costco Data</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="data.html">Intro to the Data</a>
+            <a href="visuals.html">Visualizations</a>
+            <a href="conclusion.html">Conclusions</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Product Count by Category</h2>
+            <p>
+                This bar chart shows the distribution of product categories on Costco’s online marketplace. You can hover over each bar to view the specific category name and product count.
+                <br><br>
+                The Snacks category leads with 290 items, followed by Pantry & Dry Goods (171), Candy (153), and Beverages & Water (147). Categories like Poultry and Deli have the fewest (21 and 8), likely due to refrigeration and delivery challenges.
+                <br><br>
+                This suggests Costco focuses online grocery strategy on durable goods with long shelf lives and low logistics costs, while still offering selective perishables.
+            </p>
+            <img src="Product Count, by Category.jpeg" alt="Bar Chart: Product Count by Category" width="700">
+        </section>
+
+        <section>
+            <h2>2. Heatmap by Product Price Range (%)</h2>
+            <p>
+                This heatmap shows percentage distribution of products by price range and category. Luxury pricing dominates Meat & Seafood, Poultry, Seafood, and Deli. Premium pricing is common for Floral, Bakery, Gift Baskets, Coffee, and Laundry Supplies.
+                <br><br>
+                Value-range pricing ($15–$40) is seen in household items like Detergents, Paper Products, and Candy. Bargain-range pricing (< $15) is prominent in Breakfast, Organic, and Pantry categories.
+                <br><br>
+                These pricing strategies reinforce Costco’s brand as a discount retailer offering both value and luxury.
+            </p>
+            <img src="Heatmap.jpeg" alt="Heatmap: Price Range by Category" width="700">
+        </section>
+
+        <section>
+            <h2>3. Bar Plot – Price vs Rating (D3)</h2>
+            <p>
+                This interactive bar plot shows average product rating by price range and subcategory. Users can filter by subcategory and explore dynamic updates of ratings and counts per price tier.
+                <br><br>
+                Value ($15–$40) and Premium ($40–$100) products receive the highest customer ratings. Some luxury items perform well (e.g. Snacks, Poultry), but others don’t. Bargain items sometimes rank highest in Deli and Gift Baskets.
+                <br><br>
+                This suggests perceived value varies by category and price doesn’t always equal satisfaction.
+            </p>
+            <img src="Bar plot showing the relationship between price and ratings (D3).jpeg" alt="Bar Plot: Rating vs Price Tier" width="700">
+        </section>
+
+        <section>
+            <h2>4. Scatterplot – Price After Discount vs Rating</h2>
+            <p>
+                This side-by-side scatterplot compares full-price and discounted items. Red dots represent full price; green represents discounted. Hovering reveals item name, price, rating, and discount status.
+                <br><br>
+                Most products are priced between $10–$100. Both groups cluster around high ratings (4.0–5.0), but full-priced items show more low-rated outliers.
+                <br><br>
+                Discounting doesn’t appear to significantly improve ratings, indicating Costco’s base pricing already offers value.
+            </p>
+            <img src="Side-by-side scatterplot showing the relationship between price after discount and ratings .jpeg" alt="Scatterplot: Discounted vs Full Price" width="700">
+        </section>
+
+        <section>
+            <h2>5. Food Marketing Terms by Price Category</h2>
+            <p>
+                This horizontal bar chart shows how food marketing terms (“organic,” “gluten-free,” “kosher,” etc.) are distributed across low, mid, and high price categories.
+                <br><br>
+                Kosher is the most frequent term across all tiers. Gluten-free and organic labels are evenly distributed. Interestingly, low-fat and sugar-free claims are more common in low-priced products.
+                <br><br>
+                This challenges the assumption that health-conscious branding is reserved for premium items.
+            </p>
+            <img src="Occurrences of Food Marketing Terms in Costco’s Products, by Price Category.jpeg" alt="Marketing Terms by Price Category" width="700">
+        </section>
+
+        <section>
+            <h2>Summary of Findings</h2>
+            <p>
+                Costco prioritizes durable goods online, with perishable categories limited by logistics. Prices vary by category, with essential items competitively priced and luxury products offered selectively. Discounts have minimal effect on ratings—Costco’s base pricing already reflects value. Health marketing labels aren’t limited to high-end products, with many appearing on bargain-tier goods.
+                <br><br>
+                In future work, comparing in-store vs online shopping and analyzing customer review sentiment could offer deeper insights into Costco’s retail strategies.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>DS4200 Group 7 • Costco Project</p>
+    </footer>
+</body>
+</html>
