@@ -6,21 +6,26 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <style>
     body {
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: row;
-      margin: 20px;
-    }
+  font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping */
+  flex-direction: row;
+  margin: 20px;
+}
 
-    #left {
-      flex: 3;
-    }
+#left, #right {
+  flex: 1 1 100%;  /* stack on small screens */
+}
 
-    #right {
-      flex: 1;
-      margin-left: 50px;
-    }
-
+@media (min-width: 900px) {
+  #left {
+    flex: 3;
+  }
+  #right {
+    flex: 1;
+    margin-left: 50px;
+  }
+}
     .tooltip {
       position: absolute;
       background: #ffffff;
